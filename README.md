@@ -63,6 +63,7 @@
 > windows/arm
 > windows/arm64
 > ```
+> -------
 
 #### When you run a command like go build, Go uses the current platform’s `GOOS` and `GOARCH` to determine how to build the binary. To find out what combination your platform is, you can use the go env command and pass GOOS and GOARCH as arguments:
 > ```
