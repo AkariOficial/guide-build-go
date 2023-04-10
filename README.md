@@ -97,7 +97,9 @@
 #### Another example with windows specifying the `arm64` architecture command:
 > **Output**
 > ```
-> GOOS=windows GOARCH=arm64 go build -o builds/windows/arm64/example_for_windows_arm64
+> GOOS=windows \
+>       GOARCH=arm64 \
+>       go build -o builds/windows/arm64/example_for_windows_arm64
 > ```
 
 #### Now list the files in your current directory:
