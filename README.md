@@ -119,8 +119,7 @@
 >       GOARCH=arm64 \
 >       go build -o builds/windows/arm64/windows_arm64.exe
 > ```
-
--------
+> -------
 
 #### Example with `linux` using `GOARCH` and `GOOS`  specified:
 > **Output**
@@ -137,8 +136,11 @@
 >       GOARCH=arm64 \
 >       go build -o builds/android/arm64/example_for_android_arm64
 > ```
-
--------
+> -------
 
 #### Conclusion
 > The ability to generate binaries for multiple platforms that require no dependencies is a powerful feature of the Go toolchain. In this tutorial, you used this capability by adding build tags and filename suffixes to mark certain code snippets to only compile for certain architectures. You created your own platorm-dependent program, then manipulated the `GOOS` and `GOARCH` environment variables to generate binaries for platforms beyond your current platform. This is a valuable skill, because it is a common practice to have a continuous integration process that automatically runs through these environment variables to build binaries for all platforms.
+--------
+
+## Thanks to 
+ - [DigitalOcean](https://www.digitalocean.com/community/tutorials/building-go-applications-for-different-operating-systems-and-architectures) that I had the inspiration to write this readme.md <3
