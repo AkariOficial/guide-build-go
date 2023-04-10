@@ -4,7 +4,7 @@
 #### Possible Platforms for `GOOS` and `GOARCH`
 > Before showing how to control the build process to build binaries for different platforms, let’s first inspect what kinds of platforms Go is capable of building for, and how Go references these platforms using the environment variables `GOOS` and `GOARCH`.
 
-> The Go tooling has a command that can print a list of the possible platforms that Go can build on. This list can change with each new Go release, so the combinations discussed here might not be the same on another version of Go. At the time of writing this tutorial, the current Go release is 1.13.
+> The Go tooling has a command that can print a list of the possible platforms that Go can build on. This list can change with each new Go release, so the combinations discussed here might not be the same on another version of Go. At the time of writing this tutorial, the current Go release is `go version go1.20.2 linux/arm64`.
 
 #### To find this list of possible platforms, run the following:
 > **Output**
@@ -69,10 +69,6 @@
 > go env GOOS GOARCH
 > ```
 #### In testing this example, we ran this command on Linux/Android on a machine with an ARM64 architecture, so we will receive the following output:
-> ```
-> go env GOOS GOARCH
-> ```
-
 > **Output**
 > ```
 > linux
