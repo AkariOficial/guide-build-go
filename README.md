@@ -65,11 +65,10 @@
 > ```
 
 #### When you run a command like go build, Go uses the current platform’s `GOOS` and `GOARCH` to determine how to build the binary. To find out what combination your platform is, you can use the go env command and pass GOOS and GOARCH as arguments:
-> **Output**
 > ```
 > go env GOOS GOARCH
 > ```
-> In testing this example, we ran this command on Linux/Android on a machine with an ARM64 architecture, so we will receive the following output:
+#### In testing this example, we ran this command on Linux/Android on a machine with an ARM64 architecture, so we will receive the following output:
 > ```
 > go env GOOS GOARCH
 > ```
