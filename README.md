@@ -7,7 +7,7 @@
 > The Go tooling has a command that can print a list of the possible platforms that Go can build on. This list can change with each new Go release, so the combinations discussed here might not be the same on another version of Go. At the time of writing this tutorial, the current Go release is `go version go1.20.2 linux/arm64`.
 
 #### To find this list of possible platforms, run the following:
-> **Output**
+> **Input**
 > ```
 > go tool dist list
 > ```
@@ -80,18 +80,17 @@
 #### Using Your Local `GOOS` and `GOARCH` Environment Variables
 
 > Earlier, you ran the `go env GOOS GOARCH` command to find out what OS and architecture you were working on. When you ran the `go env` command, it looked for the two environment variables `GOOS` and `GOARCH`; if found, their values would be used, but if not found, then Go would set them with the information for the current platform. This means that you can change `GOOS` or `GOARCH` so that they do not default to your local OS and architecture. </br><br> The go build command behaves in a similar manner to the go env command. You can set either the `GOOS` or `GOARCH` environment variables to build for a different platform using go build.
-
 -------
 
 #### If you are not using a Windows system, build a `windows` binary of app by setting the `GOOS` environment variable to windows when running the `go build` command:
-> **Output**
+> **Input**
 > ```
 > GOOS=windows \
 >       go build -o builds/windows/example_for_windows
 > ```
 
 #### Another example with windows specifying the `arm64` architecture command:
-> **Output**
+> **Input**
 > ```
 > GOOS=windows \
 >       GOARCH=arm64 \
@@ -99,7 +98,7 @@
 > ```
 
 #### Now list the files in your current directory:
-> **Output**
+> **Input**
 > ```
 > tree # or ls -la
 > ```
@@ -122,7 +121,7 @@
 > -------
 
 #### Example with `linux` using `GOARCH` and `GOOS`  specified:
-> **Output**
+> **Input**
 > ```
 > GOOS=linux \
 >       GOARCH=arm64 \
@@ -130,7 +129,7 @@
 > ```
 
 #### Example with `android` using `GOARCH` and `GOOS`  specified:
-> **Output**
+> **Input**
 > ```
 > GOOS=android \
 >       GOARCH=arm64 \
@@ -138,7 +137,7 @@
 > ```
 > -------
 
-#### Conclusion
+#### Conclusion 
 > The ability to generate binaries for multiple platforms that require no dependencies is a powerful feature of the Go toolchain. In this tutorial, you used this capability by adding build tags and filename suffixes to mark certain code snippets to only compile for certain architectures. You created your own platorm-dependent program, then manipulated the `GOOS` and `GOARCH` environment variables to generate binaries for platforms beyond your current platform. This is a valuable skill, because it is a common practice to have a continuous integration process that automatically runs through these environment variables to build binaries for all platforms.
 --------
 
