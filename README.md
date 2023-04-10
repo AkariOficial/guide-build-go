@@ -1,7 +1,5 @@
-## Guide Build-GO
-> A readme.md to help people with go build and GOOS / GOARCH
-
 # Building Packages Golang for architecture and linux.
+> A readme.md to help people with go build and GOOS / GOARCH
 
 ### Possible Platforms for `GOOS` and `GOARCH`
 > Before showing how to control the build process to build binaries for different platforms, let’s first inspect what kinds of platforms Go is capable of building for, and how Go references these platforms using the environment variables `GOOS` and `GOARCH`.
