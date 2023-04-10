@@ -1,4 +1,4 @@
-# Building Packages Golang for architecture and linux.
+# Building Packages Golang for architecture and system.
 > A README.MD to help people with `go build` and `GOOS`/ `GOARCH`
 
 
